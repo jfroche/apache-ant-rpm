@@ -23,6 +23,8 @@ BuildArch:	noarch
 rm -rf $RPM_BUILD_ROOT
 mkdir -p %{buildroot}%{_prefix}
 cp -r bin etc lib %{buildroot}%{_prefix}
+mkdir %{buildroot}/usr/sbin
+ln -sf %{_prefix}/bin/ant %{buildroot}/usr/sbin/ant
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -30,6 +32,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root,-)
 %{_prefix}
+/usr/sbin/ant
 
 %changelog
 * Thu Mar 1 2012 Jean-Francois Roche <jfroche@affinitic.be>
