@@ -36,5 +36,7 @@ rm -rf $RPM_BUILD_ROOT
 /usr/sbin/ant
 
 %changelog
+* Fri Sep 14 2012 Patrick Wong <patrick.k.wong@rrd.com>
+- Some additions so that it is more usable
 * Thu Mar 1 2012 Jean-Francois Roche <jfroche@affinitic.be>
 - Initial implementation
