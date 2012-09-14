@@ -9,6 +9,7 @@ URL:		http://ant.apache.org
 Source: 	http://apache.mogo.be/ant/binaries/apache-ant-%{version}-bin.tar.gz
 BuildRoot:	%(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 BuildArch:	noarch
+Requires: java-1.7.0-openjdk
 
 %description
 %{summary}
